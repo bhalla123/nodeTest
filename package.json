@@ -1,0 +1,27 @@
+{
+  "name": "capp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.4",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-flash-messages": "^0.1.1",
+    "express-session": "^1.16.1",
+    "express-validator": "^5.3.1",
+    "localStorage": "^1.0.4",
+    "moment": "^2.29.4",
+    "mysql2": "^1.6.5",
+    "nodemon": "^1.18.10",
+    "sequelize": "^5.8.6",
+    "sequelize-cli": "^5.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "license": "ISC"
+}

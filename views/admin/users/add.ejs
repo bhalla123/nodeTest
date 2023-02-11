@@ -1,0 +1,72 @@
+<%- include('../elements/header'); %>
+
+    <div class="main-content">
+        <div class="main-content-inner">
+            <div class="page-content">
+                <div class="page-header">
+                    <h1> Add New User<small> </h1>
+                </div><!-- /.page-header -->
+
+                <div class="row">
+                    <%- include ../elements/flash.ejs %>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class=" ">
+                                <form method="post" action="<%=nodeAdminUrl%>/<%=controller%>/add">
+                                    <div class="widget-body">
+                                        <div class="widget-main">
+
+                                            <div>
+                                                <label for="form-field-select-1">Name</label>
+                                                <input type="text" name="name" value="<%=data.name%>"
+                                                    id="form-field-select-1" placeholder="Name" class="form-control">
+                                                <span class="error">
+                                                    <%=errorData.name%>
+                                                </span>
+                                            </div> <br>
+
+                                            <div>
+                                                <label for="form-field-select-1"> Email </label>
+                                                <input type="email" name="email" value="<%=data.email%>"
+                                                    id="form-field-select-1" placeholder="Email" class="form-control">
+                                                <span class="error">
+                                                    <%=errorData.email%>
+                                                </span>
+                                            </div> <br>
+
+                                            <div>
+                                                <label for="form-field-select-1"> Password </label>
+                                                <input type="password" name="password" value="<%=data.password%>"
+                                                    id="form-field-select-1" placeholder="Passowrd"
+                                                    class="form-control">
+                                                <span class="error">
+                                                    <%=errorData.password%>
+                                                </span>
+                                            </div> <br>
+                                            <br><br>
+                                            <div>
+                                                <div class="row">
+                                                    <div class="col-md-offset-3 col-md-9">
+                                                        <button class="btn btn-info" type="submit">
+                                                            <i class="ace-icon fa fa-check bigger-110"></i> Submit
+                                                        </button>
+                                                        &nbsp; &nbsp; &nbsp;
+                                                        <a href="<%=nodeAdminUrl%>/<%=controller%>/list%>"> <button
+                                                                class="btn" type="button">
+                                                                Cancel
+                                                            </button></a>
+                                                    </div>
+                                                </div>
+                                                <div class="space-2"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div><!-- /.span -->
+                </div>
+            </div><!-- /.page-content -->
+        </div>
+    </div><!-- /.main-content -->
+
+
+    <%- include('../elements/footer'); %>

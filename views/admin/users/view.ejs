@@ -1,0 +1,56 @@
+<%- include('../elements/header'); %>
+
+    <div class="main-content">
+        <div class="main-content-inner">
+            <div class="breadcrumbs ace-save-state" id="breadcrumbs">
+                <ul class="breadcrumb">
+                    <li> <i class="ace-icon fa fa-tachometer"></i> <a href="<%=nodeAdminUrl%>/Dashboard">Dashboard</a>
+                    </li>
+                    <li class="active"><a href="<%=nodeAdminUrl%>/<%=controller%>/list"> Users </a> </li>
+                    <li class="active">View</li>
+                </ul><!-- /.breadcrumb -->
+            </div>
+
+            <div class="page-content">
+
+                <div class="page-header">
+                    <h1>
+                        <%=controller%> <small> <i class="ace-icon fa fa-angle-double-right"></i> Edit </small>
+                    </h1>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="">
+                            <div class="widget-body">
+                                <input type="hidden" value="<%=data.id%>" name="id" disabled>
+                                <div class="widget-main">
+
+                                    <div>
+                                        <label for="form-field-select-1">Name</label>
+                                        <input type="text" name="name" value="<%=data.name%>" id="form-field-select-1"
+                                            placeholder="Name" class="form-control" disabled>
+
+                                    </div> <br>
+
+                                    <div>
+                                        <label for="form-field-select-1"> Email </label>
+                                        <input type="text" name="email" value="<%=data.email%>" id="form-field-select-1"
+                                            placeholder="Email" class="form-control" disabled>
+
+                                    </div> <br>
+
+
+                                    <div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.span -->
+                </div>
+            </div><!-- /.page-content -->
+        </div>
+    </div><!-- /.main-content -->
+
+
+    <%- include('../elements/footer'); %>
